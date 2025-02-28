@@ -10,10 +10,6 @@ SS58-Emoji converts Substrate-based blockchain addresses (SS58 format) into memo
 - Making addresses more human-friendly and memorable
 - Adding a fun visual element to blockchain applications
 
-The tool supports various SS58 address formats, including:
-- Substrate addresses (typically starting with '5')
-- Polkadot addresses (typically starting with '1')
-- Other network-specific SS58 formats
 
 ## How It Works
 
@@ -24,16 +20,7 @@ The tool supports various SS58 address formats, including:
 5. Each 5-bit chunk is mapped to one of 32 emojis
 6. The resulting 13 emojis form a unique visual identifier for the address
 
-## Collision Probability
-
-The collision probability for this implementation is extremely low, approximately 5.42×10^-20%. 
-
-This is because:
-- We use 64 bits from the SHA-256 hash (2^64 possible values)
-- The birthday paradox formula gives us a collision probability of 1 - (2^64 - 1)/2^64
-- This is effectively 1/2^64, which is a very small number
-
-In practical terms, you would need to generate approximately 2^32 (over 4 billion) different emoji sequences before having a 50% chance of finding a collision.
+Note: The collision probability is extremely low, but it's still possible to find a collision if you generate enough different emoji sequences. PRs / improvements welcome! 
 
 ## Usage
 
