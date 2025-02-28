@@ -1,6 +1,8 @@
 # SS58-Emoji
 
-Convert SS58 addresses to unique emoji sequences for easy visual identification and comparison.
+Convert SS58 addresses to unique emoji sequences for easy visual identification and comparison. 
+
+Note: this is a project mainly focused around fun visual elements, and not focused on security. Do not use this in a productive setting. 
 
 ## Overview
 
